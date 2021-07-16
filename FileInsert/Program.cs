@@ -20,12 +20,14 @@ namespace FileInsert
             List<Country> CountryList = new List<Country>();
             List<string> StateList = new List<string>();
             List<string> FileStateList = new List<string>();
+            List<string> FileCountryList = new List<string>();
             DataTable dt = new DataTable();
             string country;
             string state;
             int countryId;
             bool dbStateExist;
             bool fileStateExist;
+            bool fileCountryExist;
 
             CountryList = getCountryList();
             StateList = getStateList();
@@ -58,7 +60,12 @@ namespace FileInsert
                         {
                             if (country != "")
                             {
-                                dt.Rows.Add(country);
+                                fileCountryExist = FileCountryList.Contains(country);
+                                if (fileCountryExist == false)
+                                {
+                                    dt.Rows.Add(country);
+                                    FileCountryList.Add(country);
+                                }
                             }
                         }
                     }

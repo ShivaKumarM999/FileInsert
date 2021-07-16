@@ -1,0 +1,19 @@
+Country		|	State
+
+India		|	Delhi
+India		|	TS
+India		|	AP
+India		|	TS
+Nepal		|	Narayani
+Nepal		|	Mahakali
+Sri Lanka	|	Matara
+India		|	Karnataka
+India		|	Kerala
+India		|	Tamil Nadu
+		|	UP
+India		|	AP
+India		|	Karnataka
+India		|	Shankara
+India		|	Delhi
+		|	Narayani
+US		|	Alabama
